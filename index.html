@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>gifOS</title>
+  </head>
+  <body class="theme-day" id="body">
+    <div class="theme_changer">
+      <button onclick="changeTheme('day')">Sailor-Day</button>
+      <button onclick="changeTheme('night')">Sailor-Night</button>
+  
+      <header></header>
+      <section class='suggested'>
+        <div id="suggested_container"></div>
+      </section>
+  
+      <section class="body">
+        <div id="body_container"></div>
+      </section>
+    </div>
+
+    <script src="./scripts/getGifts.js"></script>
+    <script src="./scripts/changeTheme.js"></script>
+  </body>
+</html>

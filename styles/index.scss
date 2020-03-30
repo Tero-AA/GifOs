@@ -1,0 +1,40 @@
+@import './utilities/_themes.scss';
+
+
+.theme_changer {
+  @include themify($themes) {
+    background-color: themed('backgroundColor');
+  }
+}
+
+// Gifs suggested section
+
+#suggested_container {
+  width: 83.33%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  img {
+    width: 23.6%;
+    height: 18rem;
+  }
+}
+
+// Gifs Body section
+
+#body_container {
+  padding-top: 40px;
+  width: 83.33%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  img {
+    width: 23.6%;
+    height: 18rem;
+    padding-bottom: 20px;
+  }
+}
