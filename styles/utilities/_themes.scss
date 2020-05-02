@@ -6,18 +6,19 @@ $themes: (
     backgroundColor: #FFF4FD,
     topbar-background-1: #F7C9F3,
     topbar-background-2: #4180F6,
+    logo: url('../../assets/gifOF_logo.png'),
   ),
   // Sailor Night
   night: (
     backgroundColor: #110038,
     topbar-background-1: #EE3EFE,
     topbar-background-2: #2E32FB,
+    logo: url('../../assets/gifOF_logo_dark.png'),
   ),
 );
 
 $white: #FFFFFF;
 $border-black: #110038;
-
 
 // Implementation of themes
 

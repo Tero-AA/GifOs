@@ -1,0 +1,22 @@
+nav {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-self: center;
+  justify-content: space-between;
+  margin-top: 35px;
+  .logo {
+    a {
+       @include themify($themes) {
+         content: themed(logo);
+       }
+    }
+  }
+}
+
+@media (min-width: 1095px) {
+  nav {
+    width: 82%;
+  }
+}
