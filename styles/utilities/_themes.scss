@@ -1,24 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap");
 
 $themes: (
   // Sailor Day
   day: (
     backgroundColor: #FFF4FD,
-    // textColor: #408bbd,
-    // buttonTextColor: #408bbd,
-    // buttonTextTransform: none,
-    // buttonTextHoverColor: #61b0e7,
-    // buttonColor: #fff,
-    // buttonBorder: 2px solid #408bbd,
+    topbar-background-1: #F7C9F3,
+    topbar-background-2: #4180F6,
   ),
   // Sailor Night
   night: (
     backgroundColor: #110038,
-    // textColor: #ddd,
-    // buttonTextColor: #aaa,
-    // buttonTextTransform: uppercase,
-    // buttonTextHoverColor: #ddd,
-    // buttonColor: #333,
-    // buttonBorder: 1px solid #333,
+    topbar-background-1: #EE3EFE,
+    topbar-background-2: #2E32FB,
   ),
 );
 
@@ -48,3 +41,9 @@ $themes: (
     background-color: themed('backgroundColor');
   }
 }
+
+// .topTitle {
+//   @include themify($themes) {
+//     background-image: linear-gradient(270deg, themed('topbar-background-1') 0%, themed('topbar-background-1') 100%);
+//   }
+// }
