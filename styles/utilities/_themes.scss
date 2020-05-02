@@ -1,4 +1,3 @@
-// Based on SCSS Theming by dmitru - https://codepen.io/dmitriy_borodiy/pen/RKzwJp
 
 $themes: (
   // Sailor Day
@@ -42,4 +41,10 @@ $themes: (
 
 @function themed($key) {
   @return map-get($theme-map, $key);
+}
+
+.theme_changer {
+  @include themify($themes) {
+    background-color: themed('backgroundColor');
+  }
 }

@@ -1,0 +1,39 @@
+// Gifs suggested section
+
+#suggested_container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  img {
+    width: 350px;
+    height: 280px;
+    margin: 20px auto;
+  }
+}
+
+// Gifs Body section
+
+#body_container {
+  @extend #suggested_container;
+}
+
+@media (min-width: 1095px) {
+  #suggested_container {
+    width: 83.33%;
+    img {
+      width: 23.5%;
+    }
+  }
+
+  #body_container {
+    img {
+      &:nth-child(5),
+      &:nth-child(10) {
+        width: 48.5%;
+      }
+    }
+  }
+}
