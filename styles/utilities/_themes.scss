@@ -15,6 +15,9 @@ $themes: (
   ),
 );
 
+$white: #FFFFFF;
+$border-black: #110038;
+
 
 // Implementation of themes
 
@@ -41,9 +44,3 @@ $themes: (
     background-color: themed('backgroundColor');
   }
 }
-
-// .topTitle {
-//   @include themify($themes) {
-//     background-image: linear-gradient(270deg, themed('topbar-background-1') 0%, themed('topbar-background-1') 100%);
-//   }
-// }
