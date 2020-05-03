@@ -1,0 +1,117 @@
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+.nav-button {
+  @include themify($themes) {
+    background: themed('topbar-background-1');
+    box-shadow: inset -1px -1px 0 0 themed('shadow'), inset 1px 1px 0 0 $white;
+  }
+  padding: 0.5rem 1.8rem;
+  border: 1px solid $border-black;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  color: $border-black;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin-left: 16px;
+  &:hover {
+    color: $border-black;
+    outline: 0.2px dotted $border-black;
+    outline-offset: -5px;
+    filter: brightness(0.9);
+  }
+}
+
+.dropdown {
+  padding: 8px 12px;
+  margin-left: -5px;
+  img {
+    width: 10px;
+    height: 6px;
+  }
+}
+
+.dropdown-menu {
+  transform: translate(11.5rem, 0);
+  position: absolute;
+  display: none;
+  flex-flow: column nowrap;
+  width: 11.2rem;
+  .dropdown-list {
+    @include themify($themes) {
+      background: themed('backgroung-window');
+      box-shadow: inset -2px -2px 0 0 themed('backgroung-window-shadow'), inset 2px 2px 0 0 $white;
+    }
+    margin: 0;
+    padding: 0;
+    width: 178px;
+    .dropdown-item {
+      list-style: none;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      button {
+        margin: 5px;
+        width: 90%;
+        border: 1px solid $button-border;
+        box-shadow: inset -1px -1px 0 0 $button-inner-shadow, inset 1px 1px 0 0 $white;
+        padding: 3% 0 3% 0;
+        font-size: 16px;
+        color: $border-black;
+        letter-spacing: 0;
+        line-height: 22px;
+        font-family: "Chakra Petch";
+      }
+      .night {
+        @include themify($themes) {
+          background: themed('night-button');
+          color: themed('night-button-text');
+        }
+        span {
+          @include themify($themes) {
+            text-decoration: themed('night-focus');
+          }
+        }
+      }
+      .day {
+        @include themify($themes) {
+          background: themed('day-button');
+        }
+        span {
+          @include themify($themes) {
+            text-decoration: themed('day-focus');
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Chakra Petch";
+  align-self: center;
+  margin-left: 16.5px;
+  @include themify($themes) {
+    color: themed('night-button-text');
+  }
+  &:hover {
+    @include themify($themes) {
+      color: themed('night-button-text');
+      outline: 0.2px dotted themed('night-button-text');
+    }
+    outline-offset: 5px;
+    filter: brightness(0.9);
+  }
+  &:active {
+    color: #cca6c9;
+  }
+  span {
+    text-decoration: underline;
+  }
+}

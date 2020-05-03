@@ -8,28 +8,48 @@
   </head>
   <body class="theme-day" id="body">
     <div class="theme_changer">
+      <!-- top label -->
       <div class="top-title">
         <p class="top-text">
           ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
           de visitas: 12.765.803
         </p>
       </div>
+      <!-- Header -->
       <header>
         <nav>
           <div class="logo">
             <a href="index.html"></a>
           </div>
           <div class="buttons">
-            <a href="./createGifs.html"></a>
-            <button onclick="changeTheme('day')">Sailor-Day</button>
-            <button onclick="changeTheme('night')">Sailor-Night</button>
+            <a href="./createGifs.html">
+              <button class="nav-button">Crear Guifos</button>
+            </a>
+            <button onclick="openDropdown()" class="nav-button">Elegir tema</button>
+            <button onclick="openDropdown()" class="nav-button dropdown">
+              <img src="./assets/dropdown.svg" alt="menu-desplegable" />
+            </button>
+            <div class="dropdown-menu" id="dropdown-menu">
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <button class="day" onclick="changeTheme('day')"><span>S</span>ailor-Day</button>
+                </li>
+                <li class="dropdown-item">
+                  <button class="night" onclick="changeTheme('night')"><span>S</span>ailor-Night</button>
+                </li>
+              </ul>
+            </div>
+              <a class="nav-link" href="./myGifs.html">
+                <span class="underline">M</span>is Guifos
+              </a>
           </div>
         </nav>
       </header>
+      <!-- Suggested -->
       <section class='suggested'>
         <div id="suggested_container"></div>
       </section>
-  
+      <!-- Main -->
       <section class="body">
         <div id="body_container"></div>
       </section>

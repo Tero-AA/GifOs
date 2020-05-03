@@ -445,4 +445,187 @@ nav {
     width: 82%;
   }
 }
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-button {
+  padding: 0.5rem 1.8rem;
+  border: 1px solid #110038;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin-left: 16px;
+}
+
+.theme-day .nav-button {
+  background: #F7C9F3;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.theme-night .nav-button {
+  background: #EE3EFE;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.nav-button:hover {
+  color: #110038;
+  outline: 0.2px dotted #110038;
+  outline-offset: -5px;
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.dropdown {
+  padding: 8px 12px;
+  margin-left: -5px;
+}
+
+.dropdown img {
+  width: 10px;
+  height: 6px;
+}
+
+.dropdown-menu {
+  -webkit-transform: translate(11.5rem, 0);
+          transform: translate(11.5rem, 0);
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 11.2rem;
+}
+
+.dropdown-menu .dropdown-list {
+  margin: 0;
+  padding: 0;
+  width: 178px;
+}
+
+.theme-day .dropdown-menu .dropdown-list {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.theme-night .dropdown-menu .dropdown-list {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dropdown-menu .dropdown-list .dropdown-item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-menu .dropdown-list .dropdown-item button {
+  margin: 5px;
+  width: 90%;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  padding: 3% 0 3% 0;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-family: "Chakra Petch";
+}
+
+.theme-day .dropdown-menu .dropdown-list .dropdown-item .night {
+  background: #F0F0F0;
+  color: #110038;
+}
+
+.theme-night .dropdown-menu .dropdown-list .dropdown-item .night {
+  background: #2E32FB;
+  color: #FFFFFF;
+}
+
+.theme-day .dropdown-menu .dropdown-list .dropdown-item .night span {
+  text-decoration: none;
+}
+
+.theme-night .dropdown-menu .dropdown-list .dropdown-item .night span {
+  text-decoration: underline;
+}
+
+.theme-day .dropdown-menu .dropdown-list .dropdown-item .day {
+  background: #FFF4FD;
+}
+
+.theme-night .dropdown-menu .dropdown-list .dropdown-item .day {
+  background: #CCCCCC;
+}
+
+.theme-day .dropdown-menu .dropdown-list .dropdown-item .day span {
+  text-decoration: underline;
+}
+
+.theme-night .dropdown-menu .dropdown-list .dropdown-item .day span {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Chakra Petch";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 16.5px;
+}
+
+.theme-day .nav-link {
+  color: #110038;
+}
+
+.theme-night .nav-link {
+  color: #FFFFFF;
+}
+
+.nav-link:hover {
+  outline-offset: 5px;
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.theme-day .nav-link:hover {
+  color: #110038;
+  outline: 0.2px dotted #110038;
+}
+
+.theme-night .nav-link:hover {
+  color: #FFFFFF;
+  outline: 0.2px dotted #FFFFFF;
+}
+
+.nav-link:active {
+  color: #cca6c9;
+}
+
+.nav-link span {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=index.css.map */
