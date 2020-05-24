@@ -1,0 +1,15 @@
+
+.suggested-title {
+  width: 95%;
+  margin: 40px auto 15px auto;
+  .suggested-text {
+    display: inline;
+    font-family: "Chakra Petch";
+  }
+}
+
+@media (min-width: 1095px) {
+  .suggested-title {
+    width: 82%;
+  }
+}

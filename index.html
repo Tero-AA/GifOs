@@ -32,10 +32,10 @@
             <div class="dropdown-menu" id="dropdown-menu">
               <ul class="dropdown-list">
                 <li class="dropdown-item">
-                  <button class="day" onclick="changeTheme('day')"><span>S</span>ailor-Day</button>
+                  <button class="day" onclick="changeTheme('day'); openDropdown()"><span>S</span>ailor-Day</button>
                 </li>
                 <li class="dropdown-item">
-                  <button class="night" onclick="changeTheme('night')"><span>S</span>ailor-Night</button>
+                  <button class="night" onclick="changeTheme('night'); openDropdown()"><span>S</span>ailor-Night</button>
                 </li>
               </ul>
             </div>
@@ -45,16 +45,34 @@
           </div>
         </nav>
       </header>
+      <!-- Search Bar -->
+      <section class="search-bar">
+        <div class="window-top">
+          <p class="window-title">
+            Buscar
+          </p>
+        </div>
+        <div class="bar-container">
+          <input type="text" name="search-bar" id="input-search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" >
+          <button id="search-button" type="button" class="search-button" >
+            <img src="./assets/lupa.svg" alt="search">
+            Buscar
+          </button>
+        </div>
+      </section>
       <!-- Suggested -->
       <section class='suggested'>
-        <div id="suggested_container"></div>
+        <div class="suggested-title">
+          <p class="suggested-text">Hoy te sugerimos:</p>
+        </div>
+        <div id="suggested_container">
+        </div>
       </section>
       <!-- Main -->
       <section class="body">
         <div id="body_container"></div>
       </section>
     </div>
-
     <script src="./scripts/getGifts.js"></script>
     <script src="./scripts/changeTheme.js"></script>
   </body>

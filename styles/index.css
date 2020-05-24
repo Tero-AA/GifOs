@@ -446,6 +446,128 @@ nav {
   }
 }
 
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 95%;
+  margin: 0 2.5%;
+  padding-top: 40px;
+}
+
+.search-bar .window-top {
+  width: 100%;
+}
+
+.theme-day .search-bar .window-top {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.theme-night .search-bar .window-top {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.search-bar .window-top .window-title {
+  margin: 0;
+  font-family: "Chakra Petch";
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 4px;
+}
+
+.search-bar .bar-container {
+  height: 67px;
+  width: 100%;
+}
+
+.theme-day .search-bar .bar-container {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.theme-day .search-bar .bar-container #input-search {
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.theme-day .search-bar .bar-container #search-button {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #FFFFFF;
+  color: #b4b4b4;
+}
+
+.theme-night .search-bar .bar-container {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.theme-night .search-bar .bar-container #input-search {
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #000000;
+}
+
+.theme-night .search-bar .bar-container #search-button {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  color: #8F8F8F;
+}
+
+.search-bar .bar-container #input-search {
+  font-family: "Chakra Petch";
+  background: #FFFFFF;
+  width: 86%;
+  margin: 0.7rem 1rem 0.7rem 1rem;
+  padding: 0.8rem 0 0.8rem 1rem;
+  border: 1px solid #979797;
+  font-size: 12px;
+}
+
+.search-bar .bar-container #search-button {
+  font-family: "Chakra Petch";
+  border: 1px solid #808080;
+  width: 9%;
+  padding: 9px 12px 9px 0;
+  font-size: 16px;
+  color: #8f8f8f;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+@media (min-width: 1095px) {
+  .search-bar {
+    width: 82%;
+    margin: 0 9%;
+  }
+}
+
+.suggested-title {
+  width: 95%;
+  margin: 40px auto 15px auto;
+}
+
+.suggested-title .suggested-text {
+  display: inline;
+  font-family: "Chakra Petch";
+}
+
+@media (min-width: 1095px) {
+  .suggested-title {
+    width: 82%;
+  }
+}
+
 button {
   cursor: pointer;
 }

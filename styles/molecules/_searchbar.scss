@@ -1,0 +1,63 @@
+.search-bar {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  width: 95%;
+  margin: 0 2.5%;
+  padding-top: 40px;
+  .window-top {
+    @include themify($themes) {
+      background-image: linear-gradient(270deg, themed('topbar-background-1') 0%, themed('topbar-background-2') 100%);
+    }
+    width: 100%;
+    .window-title {
+      margin: 0;
+      font-family: "Chakra Petch";
+      font-size: 12px;
+      color: $white;
+      padding: 4px;
+    }
+  }
+  .bar-container {
+    @include themify($themes) {
+      background: themed('backgroung-window');
+      box-shadow: inset -2px -2px 0 0 themed('backgroung-window-shadow'), inset 2px 2px 0 0 $white;
+      #input-search {
+        box-shadow: inset -2px -2px 0 0 themed('backgroung-window'), inset 2px 2px 0 0 $input-black;
+      }
+      #search-button {
+        background: themed('backgroung-window');
+        box-shadow: inset -2px -2px 0 0 themed('backgroung-window-shadow'), inset 2px 2px 0 0 $white;
+        color: themed('backgroung-window-shadow');
+      }
+    }
+    height: 67px;
+    width: 100%;
+    #input-search {
+      font-family: "Chakra Petch";
+      background: $white;
+      width: 86%;
+      margin: 0.7rem 1rem 0.7rem 1rem;
+      padding: 0.8rem 0 0.8rem 1rem;
+      border: 1px solid $input-border;
+      font-size: 12px;
+    }
+    #search-button {
+      font-family: "Chakra Petch";
+      border: 1px solid $button-border;
+      width: 9%;
+      padding: 9px 12px 9px 0;
+      font-size: 16px;
+      color: #8f8f8f;
+      letter-spacing: 0;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (min-width: 1095px) {
+  .search-bar {
+      width: 82%;
+      margin: 0 9%;
+  }
+}
